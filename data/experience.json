@@ -1,0 +1,54 @@
+{
+  "roles": [
+    {
+      "company": "PepsiCo",
+      "logo": "assets/images/logos/pepsico.svg",
+      "title": "Customer & Business Insights Analyst",
+      "start": "Jan 2026",
+      "end": "Present",
+      "description": "Customer and business insights in a consumer goods environment, covering churn, segmentation, experimentation, journey analysis and executive reporting.",
+      "highlights": [
+        "Built predictive churn models with SQL, Python, Pandas and Scikit-learn to identify at-risk customer segments, reducing quarterly customer churn by 18%.",
+        "Segmented customers with RFM analysis in Snowflake and Tableau, supporting personalized lifecycle marketing that increased Customer Lifetime Value by 22%.",
+        "Designed controlled A/B testing frameworks with Python, SciPy and Mixpanel, translating results into recommendations that improved conversion rates by 14%.",
+        "Developed automated Power BI and Tableau dashboards covering sales, marketing attribution and customer satisfaction, cutting weekly manual reporting by 40%.",
+        "Analyzed checkout journeys in SQL and GA4, lifting conversion from 2.4% to 3.8%; market basket analysis across 500,000+ transactions increased Average Order Value by 15%."
+      ],
+      "technologies": [
+        "SQL",
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Snowflake",
+        "Tableau",
+        "Power BI",
+        "SciPy",
+        "Mixpanel",
+        "Google Analytics 4 (GA4)"
+      ]
+    },
+    {
+      "company": "Hexaware Technologies",
+      "logo": "assets/images/logos/hexaware-technologies.png",
+      "title": "Business Insights Analyst",
+      "start": "Sep 2020",
+      "end": "Nov 2023",
+      "description": "Enterprise business intelligence: data pipelines, reporting workflows and sales dashboards for global sales teams.",
+      "highlights": [
+        "Engineered enterprise data pipelines and automated reporting workflows supporting 15+ executive dashboards for 6,000+ global sales users.",
+        "Developed a centralized Points Analysis Dashboard that tracked $4.9M+ in sales compensation for 2,000+ sales executives across AMER, EMEA and APAC.",
+        "Integrated disparate reporting metrics into unified Smart Home Page dashboard cards in collaboration with engineering teams.",
+        "Reduced recurring monthly defects by 27% by investigating workflow defects in Buganizer with root cause analysis.",
+        "Validated legacy Taskmaster dashboards against the Smart Home Page platform, maintaining feature parity and preventing data discrepancies during the transition."
+      ],
+      "technologies": [
+        "Buganizer",
+        "PSA Insights",
+        "Taskmaster",
+        "Data pipelines",
+        "Dashboards",
+        "Root cause analysis"
+      ]
+    }
+  ]
+}

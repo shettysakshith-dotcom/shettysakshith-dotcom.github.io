@@ -1,0 +1,100 @@
+{
+  "groups": [
+    {
+      "name": "Programming & Analytics",
+      "items": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "Scikit-learn",
+        "Exploratory Data Analysis (EDA)",
+        "Data Cleaning",
+        "Statistical Analysis",
+        "Hypothesis Testing",
+        "Descriptive Analytics"
+      ]
+    },
+    {
+      "name": "BI & Data Visualization",
+      "items": [
+        "Power BI",
+        "Tableau",
+        "Dashboard Development",
+        "Interactive Dashboards",
+        "Executive Reporting",
+        "KPI Tracking",
+        "KPI Development",
+        "Performance Analysis",
+        "Data Visualization",
+        "Management Reporting"
+      ]
+    },
+    {
+      "name": "Customer & Commercial Analytics",
+      "items": [
+        "Customer Segmentation",
+        "Customer Behavior Analysis",
+        "Customer Journey Analysis",
+        "Customer Lifetime Value (CLV)",
+        "RFM Analysis",
+        "Cohort Analysis",
+        "Funnel Analysis",
+        "Market Basket Analysis",
+        "Conversion Rate Analysis",
+        "Churn Analysis",
+        "Cross-Selling Analysis"
+      ]
+    },
+    {
+      "name": "Statistical & Predictive",
+      "items": [
+        "A/B Testing",
+        "Predictive Modeling",
+        "Churn Prediction",
+        "Propensity Modeling",
+        "Regression Analysis",
+        "Statistical Testing",
+        "Trend Analysis",
+        "Correlation Analysis"
+      ]
+    },
+    {
+      "name": "Data Engineering & Warehousing",
+      "items": [
+        "Snowflake",
+        "dbt",
+        "Data Pipelines",
+        "Data Integration",
+        "ETL/ELT Concepts",
+        "Data Transformation",
+        "Data Validation",
+        "Data Quality Management",
+        "Data Warehousing",
+        "Data Reconciliation"
+      ]
+    },
+    {
+      "name": "Analytics Platforms",
+      "items": [
+        "Mixpanel",
+        "Google Analytics 4 (GA4)",
+        "Buganizer",
+        "Taskmaster",
+        "PSA Insights"
+      ]
+    },
+    {
+      "name": "Business Competencies",
+      "items": [
+        "Business Requirements Analysis",
+        "Stakeholder Management",
+        "Cross-Functional Collaboration",
+        "Root Cause Analysis",
+        "Analytical Problem-Solving",
+        "Data-Driven Decision-Making"
+      ]
+    }
+  ]
+}

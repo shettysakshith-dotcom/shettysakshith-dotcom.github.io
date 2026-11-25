@@ -1,0 +1,51 @@
+{
+  "name": "Sakshith Shetty",
+  "title": "Customer & Business Insights Analyst | Business Intelligence | Data Analytics",
+  "summary": "I turn complex datasets into insights that improve customer engagement, retention and commercial performance. My work spans customer segmentation, churn and propensity modeling, A/B testing and executive dashboards, using SQL, Python, Power BI, Tableau and Snowflake across consumer goods and enterprise IT.",
+  "location": "Derry, NH, US",
+  "photo": {
+    "src": "assets/images/sakshith-shetty.jpg",
+    "alt": "Portrait of Sakshith Shetty"
+  },
+  "readouts": [
+    {
+      "value": "18%",
+      "label": "lower quarterly customer churn at PepsiCo"
+    },
+    {
+      "value": "22%",
+      "label": "Customer Lifetime Value increase at PepsiCo"
+    },
+    {
+      "value": "500,000+",
+      "label": "transactions analyzed for cross-selling"
+    },
+    {
+      "value": "6,000+",
+      "label": "global sales users served at Hexaware"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "View projects",
+      "href": "#projects",
+      "kind": "primary"
+    },
+    {
+      "label": "Résumé",
+      "href": "assets/files/sakshith-shetty-resume.pdf",
+      "kind": "resume"
+    },
+    {
+      "label": "Get in touch",
+      "href": "#contact",
+      "kind": "secondary"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/shettysakshith-dotcom",
+    "linkedin": "https://www.linkedin.com/in/sakshith-shetty",
+    "email": "shetty.sakshith@gmail.com",
+    "phone": "248-303-5371"
+  }
+}

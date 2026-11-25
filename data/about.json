@@ -1,0 +1,42 @@
+{
+  "paragraphs": [
+    "I am a Customer & Business Insights Analyst with 4+ years of experience delivering business intelligence and customer analytics across consumer goods and enterprise IT environments.",
+    "At PepsiCo I build predictive churn models, RFM-based customer segments and controlled A/B tests. These have reduced quarterly churn by 18%, increased Customer Lifetime Value by 22% and improved conversion rates by 14%.",
+    "Earlier, at Hexaware Technologies, I engineered data pipelines and executive dashboards used by 6,000+ global sales users, and tracked $4.9M+ in sales compensation for 2,000+ sales executives.",
+    "I am completing an MS in Data Analytics and have earned the Google Data Analytics Professional Certificate."
+  ],
+  "highlights": [
+    {
+      "label": "Focus",
+      "value": "Customer & business analytics"
+    },
+    {
+      "label": "Current role",
+      "value": "Analyst at PepsiCo"
+    },
+    {
+      "label": "Experience",
+      "value": "4+ years"
+    },
+    {
+      "label": "Base",
+      "value": "Derry, NH, US"
+    },
+    {
+      "label": "Core stack",
+      "value": "SQL, Python, Power BI, Tableau"
+    },
+    {
+      "label": "Warehouse",
+      "value": "Snowflake, dbt"
+    },
+    {
+      "label": "Degree",
+      "value": "MS Data Analytics (in progress)"
+    },
+    {
+      "label": "Certification",
+      "value": "Google Data Analytics"
+    }
+  ]
+}

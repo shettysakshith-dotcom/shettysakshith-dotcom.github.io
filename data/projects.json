@@ -1,0 +1,242 @@
+{
+  "projects": [
+    {
+      "name": "cuped",
+      "category": "Experimentation",
+      "description": "A CUPED variance-reduction library for A/B tests that refuses covariates measured after randomisation and tests that bias case explicitly. It combines a declared-window check with a balance test across arms.",
+      "highlights": [
+        "On a 30,000-customer demo, CUPED removed 38.7% of the variance, turning an 11-week test into a 7-week one.",
+        "A post-treatment covariate removed 98.3% of variance yet returned an effect of -6.601 against a true 1.80; the gate rejects it."
+      ],
+      "technologies": [
+        "Python",
+        "A/B Testing",
+        "CUPED",
+        "Variance Reduction",
+        "Statistical Testing"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/cuped"
+      },
+      "image": "assets/images/projects/cuped.svg",
+      "hero": {
+        "src": "assets/images/projects/cuped-hero.jpg",
+        "alt": "cuped — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "mixpriors",
+      "category": "Marketing analytics",
+      "description": "A Bayesian media mix model with informative adstock and saturation priors. Its budget optimiser maximises expected return under the posterior and reports a credible interval instead of a single number.",
+      "highlights": [
+        "In the demo, all 9 of 9 true channel values fall inside their 90% intervals.",
+        "Scored on the true curves, the posterior-aware plan gained +2.77% while the point-estimate shortcut lost 1.18%.",
+        "Splits a GBP 45M annual budget across nine channels from 156 weekly observations."
+      ],
+      "technologies": [
+        "Python",
+        "Bayesian Modeling",
+        "Metropolis-Hastings",
+        "Adstock",
+        "Hill Saturation",
+        "JavaScript"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/mixpriors",
+        "demo": "https://shettysakshith-dotcom.github.io/mixpriors/"
+      },
+      "image": "assets/images/projects/mixpriors.svg",
+      "hero": {
+        "src": "assets/images/projects/mixpriors-hero.jpg",
+        "alt": "mixpriors — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "uattriage",
+      "category": "Reliability analytics",
+      "description": "UAT analytics that fit defect-discovery curves to estimate remaining latent defects and a go-live readiness date with an uncertainty band, instead of reporting raw defect counts.",
+      "highlights": [
+        "Refuses to project when discovery has not flattened (b*T < 0.7) instead of returning a runaway number.",
+        "Demo on a simulated UAT project: 807 defects over 45 days, with latent-defect intervals per severity.",
+        "Calibration tests check interval coverage over 200 runs."
+      ],
+      "technologies": [
+        "Python",
+        "Goel-Okumoto (NHPP)",
+        "Kolmogorov-Smirnov test",
+        "Defect Analytics",
+        "JavaScript"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/uattriage",
+        "demo": "https://shettysakshith-dotcom.github.io/uattriage/"
+      },
+      "image": "assets/images/projects/uattriage.svg",
+      "hero": {
+        "src": "assets/images/projects/uattriage-hero.jpg",
+        "alt": "uattriage — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "claimsflow",
+      "category": "Process mining",
+      "description": "Process mining on motor insurance claim event logs that checks each case against the designed process and costs every known rework loop in days and money.",
+      "highlights": [
+        "Only 32,593 of 50,000 claims (65%) follow the designed 11-step path.",
+        "Ranks three rework loops by cost, for a total annual rework cost of GBP 4,544,492 in the demo.",
+        "Waiting time makes up 60% of elapsed time."
+      ],
+      "technologies": [
+        "Python",
+        "Process Mining",
+        "Conformance Checking",
+        "Event Logs",
+        "Cost Attribution"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/claimsflow"
+      },
+      "image": "assets/images/projects/claimsflow.svg",
+      "hero": {
+        "src": "assets/images/projects/claimsflow-hero.jpg",
+        "alt": "claimsflow — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "realtime-stock-market-pipeline",
+      "category": "Data engineering",
+      "description": "A real-time stock market analytics pipeline on a Lambda architecture. Kafka and Spark Structured Streaming feed Z-score anomaly detection, a daily batch reconciliation, dbt models and a Grafana dashboard.",
+      "highlights": [
+        "Rolling 1-minute, 5-minute and 1-hour OHLCV aggregations.",
+        "Z-score anomaly alerts graded WARNING, CRITICAL and EXTREME.",
+        "12 unit tests pass across 3 suites."
+      ],
+      "technologies": [
+        "Python",
+        "Kafka",
+        "Spark Structured Streaming",
+        "dbt",
+        "Airflow",
+        "Grafana"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/realtime-stock-market-pipeline"
+      },
+      "image": "assets/images/projects/realtime-stock-market-pipeline.svg",
+      "hero": {
+        "src": "assets/images/projects/realtime-stock-market-pipeline-hero.jpg",
+        "alt": "realtime-stock-market-pipeline — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "costlens",
+      "category": "Cost analytics",
+      "description": "Offline Kubernetes cost allocation and VPA-style rightsizing from Prometheus exports. It keeps money as exact integer nano-dollars and backtests its recommendations on held-out weeks.",
+      "highlights": [
+        "Allocated + idle + shared == total holds exactly, not approximately.",
+        "Backtests rightsizing policies by fitting on train weeks and reporting on held-out test weeks.",
+        "Runs on a simulated six-week, seven-node, multi-team cluster."
+      ],
+      "technologies": [
+        "Python",
+        "Prometheus",
+        "Kubernetes",
+        "Cost Allocation",
+        "Rightsizing",
+        "CSV/Markdown reporting"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/costlens"
+      },
+      "image": "assets/images/projects/costlens.svg",
+      "hero": {
+        "src": "assets/images/projects/costlens-hero.jpg",
+        "alt": "costlens — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "kube-rightsizer",
+      "category": "Cost analytics",
+      "description": "Right-sizes Kubernetes workloads from real Prometheus usage history and opens a reviewable GitHub pull request against a GitOps repo, never mutating live objects.",
+      "highlights": [
+        "Recommends per-container CPU and memory using p95 usage plus 15% headroom by default.",
+        "A change threshold keeps stable workloads from generating pull request noise."
+      ],
+      "technologies": [
+        "Go",
+        "Kubernetes",
+        "Prometheus",
+        "Helm",
+        "Grafana",
+        "GitOps"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/kube-rightsizer"
+      },
+      "image": "assets/images/projects/kube-rightsizer.svg",
+      "hero": {
+        "src": "assets/images/projects/kube-rightsizer-hero.jpg",
+        "alt": "kube-rightsizer — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "netreach",
+      "category": "Network analysis",
+      "description": "A Go network reachability analyser for AWS-style VPC snapshots. It uses interval arithmetic over CIDR and port ranges to explain exactly why traffic is allowed or blocked.",
+      "highlights": [
+        "Computes exact answers over a space of about 3.7 × 10^19 flows without sampling.",
+        "Checks six hand-built fixtures against hand-derived ground truth."
+      ],
+      "technologies": [
+        "Go",
+        "AWS VPC",
+        "Interval Arithmetic",
+        "CIDR",
+        "Network ACLs",
+        "Security Groups"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/netreach"
+      },
+      "image": "assets/images/projects/netreach.svg",
+      "hero": {
+        "src": "assets/images/projects/netreach-hero.jpg",
+        "alt": "netreach — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "ratewall",
+      "category": "Developer tools",
+      "description": "A pluggable token-bucket rate limiter for Python: a pure-Python core plus drop-in Starlette/ASGI middleware that answers 429 Too Many Requests with an honest Retry-After.",
+      "highlights": [
+        "Storage sits behind a Protocol and the clock is injected, so tests drive time by hand.",
+        "29 deterministic tests, none of which sleep."
+      ],
+      "technologies": [
+        "Python",
+        "Starlette",
+        "ASGI",
+        "Token Bucket",
+        "pytest",
+        "mypy"
+      ],
+      "links": {
+        "source": "https://github.com/shettysakshith-dotcom/ratewall"
+      },
+      "image": "assets/images/projects/ratewall.svg",
+      "hero": {
+        "src": "assets/images/projects/ratewall-hero.jpg",
+        "alt": "ratewall — Concept render",
+        "caption": "Concept render"
+      }
+    }
+  ]
+}
