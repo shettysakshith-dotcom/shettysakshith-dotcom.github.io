@@ -171,6 +171,157 @@
 
     <div class="projects-grid">
 
+      <article class="card" style="--span:6">
+        <figure class="card-viz">
+          <svg viewBox="0 0 400 225" role="img" aria-label="Incremental retention from contacting the top 30 percent: the churn-ranked list loses 0.23 points while the uplift-ranked list gains 4.47 points">
+            <text class="v-txt" x="20" y="24">incremental retention, top 30%</text>
+            <line class="v-line" x1="40" y1="150" x2="360" y2="150"/>
+            <rect class="v-ink" x="90" y="150" width="70" height="6"/>
+            <text class="v-txt" x="90" y="176">-0.23 pts</text>
+            <text class="v-txt" x="80" y="200">churn-ranked</text>
+            <rect class="v-sigf" x="240" y="52" width="70" height="98"/>
+            <text class="v-txt" x="240" y="44">+4.47 pts</text>
+            <text class="v-txt" x="226" y="176">uplift-ranked</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="card-meta"><span class="idx">01</span><span>Retention analytics</span></p>
+          <h3>upliftpolicy</h3>
+          <p>Retention targeting by uplift rather than churn propensity, with doubly-robust policy evaluation that finds the customers your outreach drives away.</p>
+          <ul class="hl-mini">
+            <li>Contacting the top 30% by uplift adds 4.47 points of retention; the same budget ranked by churn score loses 0.23 points.</li>
+            <li>"Sleeping dogs" make up 37% of the churn-ranked list and 4% of the uplift-ranked list.</li>
+          </ul>
+          <ul class="chips chips-sm" aria-label="Technologies used in upliftpolicy">
+            <li>Python</li><li>Uplift Modeling</li><li>Causal Inference</li><li>Churn</li><li>JavaScript</li>
+          </ul>
+          <p class="card-links"><a href="https://github.com/shettysakshith-dotcom/upliftpolicy">Source code</a></p>
+        </div>
+      </article>
+
+      <article class="card" style="--span:6">
+        <figure class="card-viz">
+          <svg viewBox="0 0 400 225" role="img" aria-label="Markov attribution bias by channel against a dashed 1.0x truth line: display, brand search and affiliate are over-credited, generic search and paid social under-credited">
+            <line class="v-dash" x1="200" y1="30" x2="200" y2="196"/>
+            <text class="v-txt" x="206" y="24">1.0x = truth</text>
+            <text class="v-txt" x="20" y="49">brand_search</text><rect class="v-sigf" x="150" y="36" width="117" height="18"/><text class="v-txt" x="273" y="49">2.34x</text>
+            <text class="v-txt" x="20" y="83">affiliate</text><rect class="v-sigf" x="150" y="70" width="86" height="18"/><text class="v-txt" x="242" y="83">1.71x</text>
+            <text class="v-txt" x="20" y="117">display</text><rect class="v-sigf" x="150" y="104" width="194" height="18"/><text class="v-txt" x="350" y="117">3.89x</text>
+            <text class="v-txt" x="20" y="151">generic_search</text><rect class="v-ink" x="150" y="138" width="24" height="18"/><text class="v-txt" x="206" y="151">0.48x</text>
+            <text class="v-txt" x="20" y="185">paid_social</text><rect class="v-ink" x="150" y="172" width="28" height="18"/><text class="v-txt" x="206" y="185">0.56x</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="card-meta"><span class="idx">02</span><span>Marketing analytics</span></p>
+          <h3>attributiongap</h3>
+          <p>Markov removal-effect attribution scored against holdout-experiment truth, publishing a per-channel bias factor that corrects the daily numbers between experiments.</p>
+          <ul class="hl-mini">
+            <li>On 60,000 simulated users, Markov attribution over-credits display 3.89x and brand search 2.34x, and under-credits generic search.</li>
+            <li>Each factor carries the age of its experiment and is shrunk as the evidence goes stale.</li>
+          </ul>
+          <ul class="chips chips-sm" aria-label="Technologies used in attributiongap">
+            <li>Python</li><li>Markov Attribution</li><li>Incrementality</li><li>Holdout Testing</li>
+          </ul>
+          <p class="card-links"><a href="https://github.com/shettysakshith-dotcom/attributiongap">Source code</a></p>
+        </div>
+      </article>
+
+      <article class="card" style="--span:4">
+        <figure class="card-viz">
+          <svg viewBox="0 0 400 225" role="img" aria-label="Margin bridge waterfall from 2025 to 2026: volume adds, mix and price subtract">
+            <line class="v-line" x1="20" y1="200" x2="380" y2="200"/>
+            <rect class="v-ink" x="30" y="100" width="50" height="100"/>
+            <rect class="v-mid" x="100" y="15" width="50" height="85"/>
+            <line class="v-dash" x1="80" y1="100" x2="100" y2="100"/>
+            <rect class="v-sigf" x="170" y="15" width="50" height="69"/>
+            <line class="v-dash" x1="150" y1="15" x2="170" y2="15"/>
+            <rect class="v-sigf" x="240" y="84" width="50" height="10"/>
+            <line class="v-dash" x1="220" y1="84" x2="240" y2="84"/>
+            <rect class="v-ink" x="310" y="93" width="50" height="107"/>
+            <line class="v-dash" x1="290" y1="93" x2="310" y2="93"/>
+            <text class="v-txt" x="30" y="218">2025</text>
+            <text class="v-txt" x="108" y="218">vol</text>
+            <text class="v-txt" x="176" y="218">mix</text>
+            <text class="v-txt" x="242" y="218">price</text>
+            <text class="v-txt" x="310" y="218">2026</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="card-meta"><span class="idx">03</span><span>Pricing analytics</span></p>
+          <h3>marginbridge</h3>
+          <p>A price-volume-mix margin bridge that reconciles exactly, plus price elasticity estimated with the discount confounder controlled.</p>
+          <ul class="hl-mini">
+            <li>Volume growth hid a mix-shift headwind (88%) and price erosion (12%).</li>
+            <li>Naive elasticity misses the truth in every segment; the corrected intervals cover it.</li>
+          </ul>
+          <ul class="chips chips-sm" aria-label="Technologies used in marginbridge">
+            <li>Python</li><li>Pricing</li><li>Elasticity</li><li>Regression</li>
+          </ul>
+          <p class="card-links"><a href="https://github.com/shettysakshith-dotcom/marginbridge">Source code</a></p>
+        </div>
+      </article>
+
+      <article class="card" style="--span:4">
+        <figure class="card-viz">
+          <svg viewBox="0 0 400 225" role="img" aria-label="Star schema: fact_sales at the centre joined to product, channel and date dimensions and a row-level-security region map">
+            <line class="v-line" x1="124" y1="58" x2="140" y2="92"/>
+            <line class="v-line" x1="276" y1="58" x2="260" y2="92"/>
+            <line class="v-line" x1="124" y1="164" x2="140" y2="132"/>
+            <line class="v-line" x1="276" y1="164" x2="260" y2="132"/>
+            <rect class="v-box" x="20" y="24" width="104" height="34"/><text class="v-txt" x="28" y="46">dim_product</text>
+            <rect class="v-box" x="276" y="24" width="104" height="34"/><text class="v-txt" x="284" y="46">dim_channel</text>
+            <rect class="v-box" x="20" y="164" width="104" height="34"/><text class="v-txt" x="28" y="186">dim_date</text>
+            <rect class="v-paperbox" x="276" y="164" width="104" height="34"/><rect class="v-decider" x="276" y="164" width="104" height="34"/><text class="v-txt" x="284" y="186">rls_region</text>
+            <rect class="v-ink" x="140" y="92" width="120" height="40"/><text class="v-paper-txt" x="156" y="117">fact_sales</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="card-meta"><span class="idx">04</span><span>Business intelligence</span></p>
+          <h3>retail-margin-cockpit</h3>
+          <p>A governed margin and inventory model: a tested dbt star schema, a DAX measure library and a Power BI model with row-level security.</p>
+          <ul class="hl-mini">
+            <li>Six marts covered by 56 dbt tests on reproducible POS, Shopify and inventory data.</li>
+            <li>Regional Manager and HQ Analyst roles, with the same boundary enforced in Postgres.</li>
+          </ul>
+          <ul class="chips chips-sm" aria-label="Technologies used in retail-margin-cockpit">
+            <li>SQL</li><li>dbt</li><li>Power BI</li><li>DAX</li>
+          </ul>
+          <p class="card-links"><a href="https://github.com/shettysakshith-dotcom/retail-margin-cockpit">Source code</a></p>
+        </div>
+      </article>
+
+      <article class="card" style="--span:4">
+        <figure class="card-viz">
+          <svg viewBox="0 0 400 225" role="img" aria-label="SLA breaches by region: East 21 and South 23, with Central, North and West at zero">
+            <text class="v-txt" x="20" y="24">SLA breaches by region</text>
+            <line class="v-line" x1="20" y1="190" x2="380" y2="190"/>
+            <rect class="v-sigf" x="36" y="85" width="44" height="105"/><text class="v-txt" x="46" y="78">21</text>
+            <rect class="v-sigf" x="106" y="75" width="44" height="115"/><text class="v-txt" x="116" y="68">23</text>
+            <rect class="v-ink" x="176" y="187" width="44" height="3"/>
+            <rect class="v-ink" x="246" y="187" width="44" height="3"/>
+            <rect class="v-ink" x="316" y="187" width="44" height="3"/>
+            <text class="v-txt" x="36" y="212">East</text>
+            <text class="v-txt" x="104" y="212">South</text>
+            <text class="v-txt" x="170" y="212">Central</text>
+            <text class="v-txt" x="248" y="212">North</text>
+            <text class="v-txt" x="320" y="212">West</text>
+          </svg>
+        </figure>
+        <div class="card-body">
+          <p class="card-meta"><span class="idx">05</span><span>SQL analytics</span></p>
+          <h3>field-ops-sql-cost-audit</h3>
+          <p>A dbt and SQL project that reconciles messy field-operations data into a true cost-to-serve per job and shows where SLA breaches concentrate.</p>
+          <ul class="hl-mini">
+            <li>A recursive CTE rebuilds route order; window functions give 4-week rolling utilization.</li>
+            <li>A data-quality exceptions view keeps excluded jobs visible.</li>
+          </ul>
+          <ul class="chips chips-sm" aria-label="Technologies used in field-ops-sql-cost-audit">
+            <li>SQL</li><li>dbt</li><li>DuckDB</li><li>Tableau</li>
+          </ul>
+          <p class="card-links"><a href="https://github.com/shettysakshith-dotcom/field-ops-sql-cost-audit">Source code</a></p>
+        </div>
+      </article>
+
       <article class="card" style="--span:7">
         <figure class="card-viz">
           <svg viewBox="0 0 400 225" role="img" aria-label="Two estimate curves: a wide naive spread and a narrower CUPED spread around a dashed true effect line">
@@ -186,7 +337,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">01</span><span>Experimentation</span></p>
+          <p class="card-meta"><span class="idx">06</span><span>Experimentation</span></p>
           <h3>cuped</h3>
           <p>A CUPED variance-reduction library for A/B tests that refuses covariates measured after randomisation and tests that bias case explicitly. It combines a declared-window check with a balance test across arms.</p>
           <ul class="hl-mini">
@@ -218,7 +369,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">02</span><span>Marketing analytics</span></p>
+          <p class="card-meta"><span class="idx">07</span><span>Marketing analytics</span></p>
           <h3>mixpriors</h3>
           <p>A Bayesian media mix model with informative adstock and saturation priors. Its budget optimiser maximises expected return under the posterior and reports a credible interval instead of a single number.</p>
           <ul class="hl-mini">
@@ -248,7 +399,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">03</span><span>Reliability analytics</span></p>
+          <p class="card-meta"><span class="idx">08</span><span>Reliability analytics</span></p>
           <h3>uattriage</h3>
           <p>UAT analytics that fit defect-discovery curves to estimate remaining latent defects and a go-live readiness date with an uncertainty band, instead of reporting raw defect counts.</p>
           <ul class="hl-mini">
@@ -289,7 +440,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">04</span><span>Process mining</span></p>
+          <p class="card-meta"><span class="idx">09</span><span>Process mining</span></p>
           <h3>claimsflow</h3>
           <p>Process mining on motor insurance claim event logs that checks each case against the designed process and costs every known rework loop in days and money.</p>
           <ul class="hl-mini">
@@ -340,7 +491,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">05</span><span>Data engineering</span></p>
+          <p class="card-meta"><span class="idx">10</span><span>Data engineering</span></p>
           <h3>realtime-stock-market-pipeline</h3>
           <p>A real-time stock market analytics pipeline on a Lambda architecture. Kafka and Spark Structured Streaming feed Z-score anomaly detection, a daily batch reconciliation, dbt models and a Grafana dashboard.</p>
           <ul class="hl-mini">
@@ -379,7 +530,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">06</span><span>Cost analytics</span></p>
+          <p class="card-meta"><span class="idx">11</span><span>Cost analytics</span></p>
           <h3>costlens</h3>
           <p>Offline Kubernetes cost allocation and VPA-style rightsizing from Prometheus exports. It keeps money as exact integer nano-dollars and backtests its recommendations on held-out weeks.</p>
           <ul class="hl-mini">
@@ -419,7 +570,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">07</span><span>Cost analytics</span></p>
+          <p class="card-meta"><span class="idx">12</span><span>Cost analytics</span></p>
           <h3>kube-rightsizer</h3>
           <p>Right-sizes Kubernetes workloads from real Prometheus usage history and opens a reviewable GitHub pull request against a GitOps repo, never mutating live objects.</p>
           <ul class="hl-mini">
@@ -448,7 +599,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">08</span><span>Network analysis</span></p>
+          <p class="card-meta"><span class="idx">13</span><span>Network analysis</span></p>
           <h3>netreach</h3>
           <p>A Go network reachability analyser for AWS-style VPC snapshots. It uses interval arithmetic over CIDR and port ranges to explain exactly why traffic is allowed or blocked.</p>
           <ul class="hl-mini">
@@ -484,7 +635,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">09</span><span>Compliance-as-code</span></p>
+          <p class="card-meta"><span class="idx">14</span><span>Compliance-as-code</span></p>
           <h3>oscalkit</h3>
           <p>A Go toolkit and CLI for NIST OSCAL compliance-as-code that resolves profiles, generates SSP skeletons, validates documents and reports control gaps against a baseline.</p>
           <ul class="hl-mini">
@@ -519,7 +670,7 @@
           </svg>
         </figure>
         <div class="card-body">
-          <p class="card-meta"><span class="idx">10</span><span>Developer tools</span></p>
+          <p class="card-meta"><span class="idx">15</span><span>Developer tools</span></p>
           <h3>ratewall</h3>
           <p>A pluggable token-bucket rate limiter for Python: a pure-Python core plus drop-in Starlette/ASGI middleware that answers 429 Too Many Requests with an honest Retry-After.</p>
           <ul class="hl-mini">

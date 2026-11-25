@@ -1,6 +1,61 @@
 {
   "projects": [
     {
+      "name": "upliftpolicy",
+      "category": "Retention analytics",
+      "description": "Retention targeting by uplift rather than churn propensity, with doubly-robust policy evaluation that finds the customers your outreach drives away.",
+      "highlights": [
+        "Contacting the top 30% by uplift adds 4.47 points of retention; the same budget ranked by churn score loses 0.23 points.",
+        "Sleeping dogs make up 37% of the churn-ranked list and 4% of the uplift-ranked list."
+      ],
+      "technologies": ["Python", "Uplift Modeling", "Causal Inference", "Churn", "JavaScript"],
+      "links": { "source": "https://github.com/shettysakshith-dotcom/upliftpolicy" }
+    },
+    {
+      "name": "attributiongap",
+      "category": "Marketing analytics",
+      "description": "Markov removal-effect attribution scored against holdout-experiment truth, publishing a per-channel bias factor that corrects the daily numbers between experiments.",
+      "highlights": [
+        "On 60,000 simulated users, Markov attribution over-credits display 3.89x and brand search 2.34x, and under-credits generic search.",
+        "Each factor carries the age of its experiment and is shrunk as the evidence goes stale."
+      ],
+      "technologies": ["Python", "Markov Attribution", "Incrementality", "Holdout Testing"],
+      "links": { "source": "https://github.com/shettysakshith-dotcom/attributiongap" }
+    },
+    {
+      "name": "marginbridge",
+      "category": "Pricing analytics",
+      "description": "A price-volume-mix margin bridge that reconciles exactly, plus price elasticity estimated with the discount confounder controlled.",
+      "highlights": [
+        "Volume growth hid a mix-shift headwind (88%) and price erosion (12%).",
+        "Naive elasticity misses the truth in every segment; the corrected intervals cover it."
+      ],
+      "technologies": ["Python", "Pricing", "Elasticity", "Regression"],
+      "links": { "source": "https://github.com/shettysakshith-dotcom/marginbridge" }
+    },
+    {
+      "name": "retail-margin-cockpit",
+      "category": "Business intelligence",
+      "description": "A governed margin and inventory model: a tested dbt star schema, a DAX measure library and a Power BI model with row-level security.",
+      "highlights": [
+        "Six marts covered by 56 dbt tests on reproducible POS, Shopify and inventory data.",
+        "Regional Manager and HQ Analyst roles, with the same boundary enforced in Postgres."
+      ],
+      "technologies": ["SQL", "dbt", "Power BI", "DAX"],
+      "links": { "source": "https://github.com/shettysakshith-dotcom/retail-margin-cockpit" }
+    },
+    {
+      "name": "field-ops-sql-cost-audit",
+      "category": "SQL analytics",
+      "description": "A dbt and SQL project that reconciles messy field-operations data into a true cost-to-serve per job and shows where SLA breaches concentrate.",
+      "highlights": [
+        "A recursive CTE rebuilds route order; window functions give 4-week rolling utilization.",
+        "A data-quality exceptions view keeps excluded jobs visible."
+      ],
+      "technologies": ["SQL", "dbt", "DuckDB", "Tableau"],
+      "links": { "source": "https://github.com/shettysakshith-dotcom/field-ops-sql-cost-audit" }
+    },
+    {
       "name": "cuped",
       "category": "Experimentation",
       "description": "A CUPED variance-reduction library for A/B tests that refuses covariates measured after randomisation and tests that bias case explicitly. It combines a declared-window check with a balance test across arms.",

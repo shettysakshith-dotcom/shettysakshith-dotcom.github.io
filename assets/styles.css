@@ -219,8 +219,7 @@ h1 span{display:block}
 /* ---------- tablet ---------- */
 @media (max-width:1080px){
   .projects-grid > .card{grid-column:span 6}
-  .projects-grid > .card:nth-child(9),
-  .projects-grid > .card:nth-child(10){grid-column:1/-1}
+  .projects-grid > .card:last-child{grid-column:1/-1}
   .card.wide{grid-template-columns:minmax(0,1fr)}
   .card.wide .card-viz{border-right:0;border-bottom:2px solid var(--ink);aspect-ratio:16/9}
   .sheets{grid-template-columns:repeat(2,minmax(0,1fr))}
